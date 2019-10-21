@@ -43,13 +43,20 @@ A estrutura desse tipo de função segue o padrão das outras, porém, você dev
 Para fixar bem todos os tópicos vistos até agora, vamos criar um algoritmo simples de boletim, mas com a ajuda de funções.
 
 ```
+
+
 var alunos = [String]()
 var notas = [Double]()
 
+func adicionarAluno(nome: String, nota: Double) {
+    alunos.append(nome)
+    notas.append(nota)
+}
+
 func exibirBoletim() {
-    print("Aluno\tNota\tSituação\n")
+    print("Aluno\t Nota\tSituação\n")
     var situacao: String
-    for i in 0...alunos.count {
+    for i in 0...alunos.count - 1 {
         if notas[i] > 7 {
             situacao = "Aprovado"
         }
@@ -59,17 +66,20 @@ func exibirBoletim() {
         else {
             situacao = "Avaliação Final"
         }
-        print("\(alunos[i])\t\(notas[i])\t\(situacao)")
+        print("\(alunos[i])\t \(notas[i]) \t\(situacao)")
     }
 }
 
-alunos.append("Pedro")
-notas.append(10.0)
-alunos.append("Juvenal")
-notas.append(8.0)
-alunos.append("Carlos")
-notas.append(6.0)
-
+adicionarAluno(nome: "Pedro", nota: 10.0)
+adicionarAluno(nome: "Carlos", nota: 6.0)
+adicionarAluno(nome: "Lucas", nota: 2.0)
 
 exibirBoletim()
+
+>>>
+Aluno	 Nota	Situação
+
+Pedro	 10.0 	Aprovado
+Carlos	 6.0 	Avaliação Final
+Lucas	 2.0 	Reprovado
 ```
