@@ -15,3 +15,7 @@ Nesta seção, você verá as principais estruturas de controle, decisão e repe
 ## [Funções](https://github.com/pedrolemoz/basiclearning/blob/master/Swift/Funcoes.md)
 
 Nesta seção, você aprenderá o básico de funções em Swift.
+
+## [Structs](https://github.com/pedrolemoz/basiclearning/blob/master/Swift/Structs.md)
+
+Nesta seção, você aprenderá sobre Struct, uma poderosa ferramenta do Swift, muito similar às classes.
