@@ -83,3 +83,79 @@ Pedro	 10.0 	Aprovado
 Carlos	 6.0 	Avaliação Final
 Lucas	 2.0 	Reprovado
 ```
+Este algoritmo é bem simples, mas pode ser simplificado ainda mais. Observe:
+
+    var alunos =  [String]()
+    
+    var notas =  [Double]()
+    
+      
+    
+    func adicionarAluno(_ nome:  String, _ nota:  Double)  {
+    
+    alunos.append(nome)
+    
+    notas.append(nota)
+    
+    }
+    
+      
+    
+    func verificarSituacao(_ nota:  Double)  ->  String  {
+    
+    if nota >  7  {
+    
+    return  "Aprovado"
+    
+    }
+    
+    else  if nota <  3  {
+    
+    return  "Reprovado"
+    
+    }
+    
+    else  {
+    
+    return  "Avaliação Final"
+    
+    }
+    
+    }
+    
+      
+    
+    func exibirBoletim()  {
+    
+    print("Aluno\t Nota\tSituação\n")
+    
+    var situacao:  String
+    
+    for i in  0...alunos.count  -  1  {
+    
+    var situacao = verificarSituacao(notas[i])
+    
+    print("\(alunos[i])\t \(notas[i]) \t\(situacao)")
+    
+    }
+    
+    }
+    
+      
+    
+    adicionarAluno("Pedro",  10.0)
+    
+    adicionarAluno("Carlos",  6.0)
+    
+    adicionarAluno("Lucas",  2.0)
+    
+      
+    
+    exibirBoletim()
+    
+    >>>
+    Aluno	 Nota	Situação
+    
+    Pedro	 10.0 	Aprovado
+    Carlos	 6.0 	Avaliação Final
+    Lucas	 2.0 	Reprovado
