@@ -126,3 +126,18 @@ Pedro	 10.0 	Aprovado
 Carlos	 6.0 	Avaliação Final
 Lucas	 2.0 	Reprovado
 ```
+Veja uma diferença interessante. No primeiro exemplo, o argumento que pedíamos era:
+
+```func adicionarAluno(nome: String, nota: Double)```
+
+Para passar o argumento para a funcão, tínhamos que escrever o nome da variável e seu valor:
+
+```adicionarAluno(nome: "Pedro", nota: 10.0)```
+
+Isso é um pouco inconveniente. Mas, com nossa melhoria, o código passou a ter um *underline* (`_`) antes do nome da variável:
+
+    func adicionarAluno(_ nome: String, _ nota: Double)
+
+Assim, nosso código principal ficou:
+
+    adicionarAluno("Pedro", 10.0)
