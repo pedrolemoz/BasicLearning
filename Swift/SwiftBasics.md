@@ -50,4 +50,8 @@ Graças a isso, podemos **simplificar** o nosso código:
 Certo, entendemos que variáveis tem seu tipo imutável. Mas e se precisarmos converter tipos?
 Em Swift, os valores nunca são convertidos implicitamente. Isso significa dizer que nós deveremos especificar o valor para o qual queremos converter.
 
-    var numeroDouble:Double = 5000.00
+```
+var numeroDouble:Double = 5000.00
+var numeroInt:Int = Int(numeroDouble)
+var numeroString = String(numeroInt)
+```
