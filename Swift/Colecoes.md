@@ -39,10 +39,58 @@ Se você tiver estudado estruturas de dados, saberá que um array é uma lista e
 
 ```meuArray.append(novoElemento)```
 
+- Adicionar elementos em uma determinada posição:
+
+```meuArray.append(novoElemento, at: posicao```
+
+- Remove elementos do início do array:
+
+```meuArray.removeFirst()```
+
 - Remover elementos do fim do array:
 
 ```meuArray.removeLast()```
 
-- Remover elementos de uma determinada posição
+- Remover elementos de uma determinada posição:
 
 ```meuArray.remove(at: posicao)```
+
+- Acessar o primeiro elemento do array:
+
+```meuArray.first```
+
+- Acessar o último elemento do array:
+
+```meuArray.last```
+
+- Verificar se um array está vazio:
+
+```meuArray.isEmpty()```
+
+- Obter o número de elementos de um array:
+
+```meuArray.count```
+
+- Obter a capacidade máxima de armazenamento do array:
+
+```meuArray.capacity```
+
+- Verificar se um elemento está dentro do array:
+
+```meuArray.contains()```
+
+- Retorna o menor elemento do array:
+
+```meuArray.min()```
+
+- Retorna o maior elemento do array:
+
+```meuArray.max()```
+
+- Ordena o array:
+
+```meuArray.sort()```
+
+- Inverte a ordem das posições de um array:
+
+```meuArray.reverse()```
