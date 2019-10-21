@@ -11,3 +11,7 @@ Nesta seção, você verá sobre as coleções do Swift (Array, Dicionário, Set
 ## [Estruturas básicas do Swift](https://github.com/pedrolemoz/basiclearning/blob/master/Swift/EstruturasSwift.md)
 
 Nesta seção, você verá as principais estruturas de controle, decisão e repetição, essenciais para qualquer programa.
+
+## [Funções](https://github.com/pedrolemoz/basiclearning/blob/master/Swift/Funcoes.md)
+
+Nesta seção, você aprenderá o básico de funções em Swift.
