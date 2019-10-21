@@ -71,7 +71,7 @@ Em Swift, temos alguns operadores básicos, comuns a praticamente todas as lingu
 
 Não vou me alongar em explicar eles aqui, pois este não é um curso para iniciantes: você **deve** saber alguma coisa, mesmo que pouco.
 
-## Interpolação e concatenação de Strings
+## Interpolação e concatenação de strings
 
 Como visto no Hello World, temos uma função chamada print, que imprime no console o que pedimos. Mas, e se quisermos utilizar **variáveis** dentro do print?
 
