@@ -18,6 +18,7 @@ Em Swift, temos alguns tipos primitivos de dados. São eles:
 - ```String```: **Conjunto de caracteres.** Ex.: "*O Pedro é um cara legal!*"
 - ```Boolean```: **Valores lógicos** ```true``` **ou** ```false```**.**
 
+
 Entendidos os tipos primitivos, podemos passar para as variáveis.
 Variáveis são **espaços de memória** alocados para armazenar temporariamente um dado.
 As variáveis podem ser de dois tipos:
@@ -31,7 +32,7 @@ Em Swift, a variável deve obedecer a seguinte sintaxe:
 
 ```let nomeDaVariavel:tipoDeDado = valorDaVariavel```
 
-> Após iniciada uma variável var de um determinado tipo, ela permanecerá desse mesmo tipo até o fim da execução do programa.
+> Após iniciada uma variável var de um determinado tipo, ela permanecerá desse mesmo tipo **até o fim da execução** do programa.
 
 Uma variável em Swift é capaz de **inferir qual o tipo de dado** que foi armazenado.
 Graças a isso, podemos **simplificar** o nosso código:
@@ -40,3 +41,13 @@ Graças a isso, podemos **simplificar** o nosso código:
 
 ```let nomeDaVariavel = valorDaVariavel```
 
+´Podemos ainda, inicializar uma variável, mas **sem atribuir** um valor a ela:
+
+```var nomeDaVariavel```
+
+```let nomeDaVariavel```
+
+Certo, entendemos que variáveis tem seu tipo imutável. Mas e se precisarmos converter tipos?
+Em Swift, os valores nunca são convertidos implicitamente. Isso significa dizer que nós deveremos especificar o valor para o qual queremos converter.
+
+    var numeroDouble:Double = 5000.00
