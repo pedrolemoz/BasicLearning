@@ -136,8 +136,8 @@ Para passar o argumento para a funcão, tínhamos que escrever o nome da variáv
 
 Isso é um pouco inconveniente. Mas, com nossa melhoria, o código passou a ter um *underline* (`_`) antes do nome da variável:
 
-    func adicionarAluno(_ nome: String, _ nota: Double)
+```func adicionarAluno(_ nome: String, _ nota: Double)```
 
 Assim, nosso código principal ficou:
 
-    adicionarAluno("Pedro", 10.0)
+```adicionarAluno("Pedro", 10.0)```
