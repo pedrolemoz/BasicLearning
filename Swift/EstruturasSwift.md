@@ -36,7 +36,7 @@ for i in 0..10{
 }
 ```
 
-Diferente, não é? Mas é bem simples. Mas ainda existe um segundo ```for```, que chamamos de ```forEach```.
+Diferente, não é? Mas é bem simples. Porém, ainda existe um segundo ```for```, que chamamos de ```forEach```.
 
 
 ### Iterar em um array
