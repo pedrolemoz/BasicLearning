@@ -52,8 +52,8 @@ Certo, entendemos que variáveis têm seu tipo imutável. Mas e se precisarmos c
 Em Swift, os valores nunca são convertidos implicitamente. Isso significa dizer que nós deveremos especificar o valor para o qual queremos converter.
 
 ```
-var numeroDouble:Double = 5000.00
-var numeroInt:Int = Int(numeroDouble)
-var numeroString = String(numeroInt)
+var numeroDouble:Double = 5000.00 // Variável do tipo Double
+var numeroInt:Int = Int(numeroDouble) // Variável do tipo Int
+var numeroString = String(numeroInt) // Variável do tipo String
 ```
 
