@@ -2,6 +2,8 @@
 
 O uso de funções é essencial para que possamos ter uma boa legibilidade e organização de nosso código.
 
+Uma função deverá ser escrita depois de todas as variáveis que ela utiliza terem sido declaradas.
+
 ## Funções que não retornam nada
 
 A sintaxe para uma função que não retorna valor algum é a seguinte:
@@ -134,10 +136,21 @@ Para passar o argumento para a funcão, tínhamos que escrever o nome da variáv
 
 ```adicionarAluno(nome: "Pedro", nota: 10.0)```
 
-Isso é um pouco inconveniente. Mas, com nossa melhoria, o código passou a ter um *underline* (`_`) antes do nome da variável:
+Isso é um pouco inconveniente. Mas, com nossa melhoria, o código passou a ter um *underline* (`_`) antes do no nome da variável:
 
 ```func adicionarAluno(_ nome: String, _ nota: Double)```
 
 Assim, nosso código principal ficou:
 
 ```adicionarAluno("Pedro", 10.0)```
+
+O uso do *underline* é opcional, mas faz uma grande diferença na implementação.
+
+Este é o básico sobre funções. Em resumo:
+
+- ```func``` é a palavra reservada que você usa para definir uma função.
+- Os argumentos dentro de uma função devem seguir a sintaxe ```nome: tipo```.
+    - Nesse caso, na chamada da função, você deve usar a sintaxe ```nomeDaFuncao(variavel: tipo)```.
+    - Para não precisar especificar o nome da variável, use um *underline* antes no nome, como na sintaxe ```_ nome: tipo```.
+- ```return``` é a palavra reservada para que você retorne valores.
+    - Você deverá especificar o tipo de valor que será retornado, usando a sintaxe ```-> tipo```.
