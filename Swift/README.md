@@ -19,3 +19,5 @@ Nesta seção, você aprenderá o básico de funções em Swift.
 ## [Structs](https://github.com/pedrolemoz/basiclearning/blob/master/Swift/Structs.md)
 
 Nesta seção, você aprenderá sobre Struct, uma poderosa ferramenta do Swift, muito similar às classes.
+
+> Nota: estes artigos foram criados para estudos pessoais, podem haver equívocos. Caso encontre, sinta-se à vontade para corrigir.
