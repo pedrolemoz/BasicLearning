@@ -63,7 +63,7 @@ Mais uma vez, os espaços são muito importantes.
 Para criar um laço de repetição ```for``` clássico, a sintaxe é a seguinte:
 
 ```
-for i in 0..10{
+for i in 0...10{
     algumaCoisa
 }
 ```
