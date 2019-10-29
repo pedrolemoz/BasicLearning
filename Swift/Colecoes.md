@@ -242,3 +242,31 @@ Agora que já definimos o que é cada uma das operações, vejamos um pouco da s
 ```meuSet.symetricDifference(meuOutroSet)```
 
 
+### Relações entre conjuntos
+
+Existem algumas relações entre os conjuntos, dado um conjunto universo em que todos estão inclusos. Observe a imagem abaixo:
+
+<p align="center">
+  <img src="https://docs.swift.org/swift-book/_images/setEulerDiagram_2x.png" alt="Relações entre conjuntos."/>
+
+Esta imagem mostra três conjuntos, os quais tem algumas relações interessantes.
+
+O conjunto B é subconjunto (ou está contido em) de A, pois todos os elementos de B também pertencem a A, e o conjunto A é superconjunto (ou contém) de B, que por sua vez é subconjunto do conjunto universo. B e C são dois conjuntos disjuntos, pois não há relação alguma entre eles, e não compartilham elementos. B é igual a ```A ∩ B```.
+
+A sintaxe das relações em Swift é a seguinte:
+
+#### Verificar se um set é subconjunto de outro:
+
+```meuSet.isSubset(of: meuOutroSet)```
+
+#### Verificar se um set é superconjunto de outro:
+
+```meuSet.isSuperset(of: meuOutroSet)```
+
+#### Verificar se os sets são disjuntos:
+
+```meuSet.isDisjoint(with: meuOutroSet)```
+
+#### Verificar se um set é igual a outro:
+
+```meuSet == meuOutroSet```
