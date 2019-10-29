@@ -159,7 +159,7 @@ Verificar se determinado elemento está contido no conjunto:
 
 ```meuSet.contains()```
 
-### Iterar sobre um set
+### Iterar sobre um Set
 
 Assim como em um Array, usamos o ```forEach``` para iterar sobre um set:
 
@@ -180,3 +180,57 @@ for i in meuArray.sorted(){
 ```
 
 Não estamos trabalhando com um conjunto desordenado de dados, e sim, em um que está organizado em ordem crescente, para números, e em ordem alfabética para Strings. Note que para Strings, é usada a tabela ASCII para realizar essa operação. Isso significa dizer que essa ordenação é ```case sensitive```. Existem muitas coisas para serem mencionadas sobre o ```sorted```. Você pode passar funções anônimas (conhecidos como lambda, em algumas linguagens, como o Python) e fazer algumas outras coisas. Veja mais sobre isso [clicando aqui](https://docs.swift.org/swift-book/LanguageGuide/Closures.html).
+
+
+### Operações fundamentais de um Set
+
+> Nota: agora o autor vai começar a falar de matemática, então, caso tenha faltado as aulas de matemática discreta, seja cuidadoso!
+
+Lembra que comparei um set a um conjunto matemático? Que disse que ele é bem semelhante? Pois bem, não foi por acaso. Em um set, temos algumas operações de conjuntos, algumas das quais são essenciais. Veja abaixo, com a ajuda de alguns diagramas de Venn.
+
+<p align="center">
+  <img src="https://docs.swift.org/swift-book/_images/setVennDiagram_2x.png" alt="Operações com conjuntos."/>
+
+Perceba que é necessário que tenhamos 2 sets para realizar essas operações.
+
+Antes de voltar para o código, vamos definir as operações.
+
+```
+Sejam A e B dois conjuntos pertencentes ao conjunto universo, e x um real qualquer.
+```
+
+#### União
+
+Conjunto dos elementos que pertencem a um dos dois conjuntos (A ou B). Matematicamente:
+
+```A ∪ B = {x ∈ U | x ∈ A ou x ∈ B}```
+
+#### Intercessão
+
+Conjunto dos elementos que pertencem simultaneamente a A e B. Matematicamente:
+
+```A ∩ B = {x ∈ U | x ∈ A e x ∈ B}```
+
+#### Diferença simétrica
+
+Conjunto dos elementos que pertencem a A e B, mas que não pertencem a intercessão entre A e B. Matematicamente:
+
+```A ∆ B = (A ∪ B) - (A ∩ B)```
+
+Agora que já definimos o que é cada uma das operações, vejamos um pouco da sintaxe:
+
+- União:
+
+```meuSet.union(meuOutroSet)```
+
+- Intercessão:
+
+```meuSet.intersection(meuOutroSet)```
+
+- Diferença:
+
+```meuSet.subtracting(meuOutroSet)```
+
+- Diferença simétrica:
+
+```meuSet.symetricDifference(meuOutroSet)```
