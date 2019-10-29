@@ -1,4 +1,7 @@
 # Coleções
+
+Esse é um tópico bem extenso, tire um tempo para ler com calma.
+
 ## Arrays (ou vetor)
 
 A principal coleção que temos em Swift são os **arrays**. Um array é um conjunto de dados de um tipo único que possui um índice atrelado.
@@ -270,3 +273,88 @@ A sintaxe das relações em Swift é a seguinte:
 #### Verificar se um set é igual a outro:
 
 ```meuSet == meuOutroSet```
+
+### Dicionários
+
+Os dicionários armazenam dados, assim como os Arrays e os Sets. A grande diferença está em que cada dado possui um identificador único. É semelhante ao índice de um array, porém, este índice é definido por você, programador.
+
+#### Inicializar e modificar um dicionário
+
+A sintaxe para criar um dicionário vazio é:
+
+```var meuDict = [tipoChave: tipoValor]()```
+
+Para criar um dicionário com valores:
+
+```var meuDict: [tipoChave: tipoValor] = [chave1: valor1, chave2: valor2]```
+
+Para acessar um dicionário, você pode usar a chave como índice:
+
+```
+var meuDict = [String: String]()
+meuDict["Pedro"] = "Programador"
+print(meuDict["Pedro"])
+>>>
+Programador
+```
+
+Você pode usar alguns métodos dos Arrays e Sets, como o ```count```, ```contains``` e outros. Porém, para os dicionários existem outros. Relembre o código anterior. Suponha que você deseje mudar o conteúdo da chave "Pedro". Observe:
+
+```
+let valorAnterior = meuDict.updateValue("Programador inteligente", forKey: "Pedro")
+print("O valor anterior era \(valorAnterior)")
+>>>
+O valor anterior era Programador
+```
+
+Note uma coisa interessante: além de mudar o valor da chave, esse método retorna o valor anterior que essa chave tinha. Útil pra quando desejarmos saber se houve ou não uma alteração.
+
+Para remover um valor de um dicionário, temos duas possibilidades. A primeira é acessar a chave e definir o valor dela como ```nil``` (valor nulo):
+
+```meuDict["Pedro"] = nil```
+
+Também podemos usar um método pra isso:
+
+```meuDict.removeValue(forKey: "Pedro")```
+
+Para remover todos os valores de um dicionário:
+
+```meuDict = [:]```
+
+### Iterando sobre um dicionário
+
+Se você já tem conhecimento de dicionários em Python 3, vai compreender facilmente como iterar em um dicionário. Temos algumas alternativas:
+
+```
+let meuDict = ["Pedro": "Programador", "Lucas": "Designer"]
+
+for (chave, valor) in meuDict{
+    print("\(chave): \(valor)")
+}
+>>>
+Pedro: Programador
+Lucas: Designer
+```
+
+Certo, mas e se eu quiser acessar só as chaves ou só os valores? Exatamente a mesma coisa, mas adicione ```.keys``` ou ```.values```.
+
+```
+let meuDict = ["Pedro": "Programador", "Lucas": "Designer"]
+
+for chaves in meuDict.keys{
+    print("\(chaves)")
+}
+
+for valores in meuDict.values{
+    print("\(valores)")
+}
+>>>
+Pedro
+Lucas
+Programador
+Designer
+```
+
+Até que enfim chegamos ao final desse tópico! Bem extenso, mas também é essencial saber.
+
+> Nota: as imagens dos diagramas utilizados são da própria documentação do Swift
