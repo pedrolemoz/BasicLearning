@@ -199,25 +199,25 @@ Antes de voltar para o código, vamos definir as operações.
 Sejam A e B dois conjuntos pertencentes ao conjunto universo, e x um real qualquer.
 ```
 
-#### União
+#### Definição de união
 
 Conjunto dos elementos que pertencem a um dos dois conjuntos (A ou B). Matematicamente:
 
 ```A ∪ B = {x ∈ U | x ∈ A ou x ∈ B}```
 
-#### Intercessão
+#### Definição de intercessão
 
 Conjunto dos elementos que pertencem simultaneamente a A e B. Matematicamente:
 
 ```A ∩ B = {x ∈ U | x ∈ A e x ∈ B}```
 
-#### Diferença
+#### Definição de diferença
 
 Conjunto dos elementos que pertencem a A, mas não pertencem a B. Matematicamente:
 
 ```A - B = {x ∈ U | x ∈ A e x ∉ B}```
 
-#### Diferença simétrica
+#### Definição de diferença simétrica
 
 Conjunto dos elementos que pertencem a A e B, mas que não pertencem a intercessão entre A e B. Matematicamente:
 
