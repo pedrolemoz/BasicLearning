@@ -6,7 +6,7 @@ Nesta seção, você verá o básico sobre tipos de variáveis, tipos de dados e
 
 ## [Coleções](https://github.com/pedrolemoz/basiclearning/blob/master/Swift/Colecoes.md)
 
-Nesta seção, você verá sobre as coleções do Swift (Array, Dicionário, Sets) e alguns de seus métodos.
+Nesta seção, você verá sobre as coleções do Swift (Arrays, Sets e Dicionários) e alguns de seus métodos.
 
 ## [Estruturas básicas do Swift](https://github.com/pedrolemoz/basiclearning/blob/master/Swift/EstruturasSwift.md)
 
