@@ -211,6 +211,12 @@ Conjunto dos elementos que pertencem simultaneamente a A e B. Matematicamente:
 
 ```A ∩ B = {x ∈ U | x ∈ A e x ∈ B}```
 
+#### Diferença
+
+Conjunto dos elementos que pertencem a A, mas não pertencem a B. Matematicamente:
+
+```A - B = {x ∈ U | x ∈ A e x ∉ B}```
+
 #### Diferença simétrica
 
 Conjunto dos elementos que pertencem a A e B, mas que não pertencem a intercessão entre A e B. Matematicamente:
