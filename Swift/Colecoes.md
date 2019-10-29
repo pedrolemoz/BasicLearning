@@ -219,18 +219,20 @@ Conjunto dos elementos que pertencem a A e B, mas que não pertencem a intercess
 
 Agora que já definimos o que é cada uma das operações, vejamos um pouco da sintaxe:
 
-- União:
+#### União:
 
 ```meuSet.union(meuOutroSet)```
 
-- Intercessão:
+#### Intercessão:
 
 ```meuSet.intersection(meuOutroSet)```
 
-- Diferença:
+#### Diferença:
 
 ```meuSet.subtracting(meuOutroSet)```
 
-- Diferença simétrica:
+#### Diferença simétrica:
 
 ```meuSet.symetricDifference(meuOutroSet)```
+
+
